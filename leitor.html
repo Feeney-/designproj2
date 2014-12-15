@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>artigo</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+  var buyLink;
+
+$(document).ready(function(){ 
+
+  var artigo = getUrlParameter('q');
+
+  function getUrlParameter(sParam)
+  {
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++) 
+      {
+          var sParameterName = sURLVariables[i].split('=');
+          if (sParameterName[0] == sParam) 
+          {
+              return sParameterName[1];
+          }
+      }
+  }   
+
+  console.log(artigo);
+  //primeiro artigo
+      switch(artigo) {
+      case "1":
+      document.getElementById("bg").src="images/1.jpg";
+      buyLink ="The-Making-Tools-Alexander-Weygers/dp/0442293607";
+      $("#titulo").append("The Making of Tools")
+      $("#primeiro").append("<p><cite>Using tools to make tools is as high a craft and calling as they come. Get your forge, anvil, drill-press, and this well-made book. Start with screwdrivers. Work up to shears. With the sequel below, move on to chisels, shovels, and tools of your own invention.     —SB </cite></p><p>Most tools are made of high-carbon steel. This is temperable steel. It can be bought cheaply at steel scrapyards and automotive junkyards. And, once you develop an eye for it, great amounts are found strewn along highways and in vacant lots to add to your own scrap pile. No matter how beat-up or rusty a piece of discarded scrap may be, add it to your own supply. Scrap is cheap, and as rusty, corroded surfaces are usually only skin deep, they can easily be ground clean. </p>");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p> Files will often remove steel as efficiently as grindstones — generally as quickly, and with greater control. Don't neglect learning how to file accurately. Make yourself carry out, at least once, the excerclses recommended in dealing with hinged tools like tinsnips, shears, pliers, etc. Try to master the filing technique, for it will benefit all you plan to accomplish in toolmaking. </p><p>You will sometimes find yourself tempted to whip out a needed, easy-to-make tool that you have lost or mislaid. I have often made a duplicate wrench, screwdriver, hammer, garden tool, rather than spend the time searching for it. The happy result is that wherever I happen to be working — in the shop, studio, house, or garden — there is always a spare one nearby. </p>"); 
+
+      });
+      break;
+//segundo artigo
+      case "2":
+      document.getElementById("bg").src="images/2.jpg";
+      buyLink ="Designing-Houses-An-Illustrated-Guide/dp/0879510358";
+      $("#titulo").append("Designing Houses")
+      $("#primeiro").append("<p><cite>Though not billed as such, Designing-houses is a thingmaker's dream book! Even if designing and building your own 'big house' is not within your current reach, you cannot help being caught up in the enthusiasm generated within. Model making is stressed throughout, starting with the setting up of your own 'architect's office,' obtaining the instruments and tools of the trade and quite an ample course on cardboard construction. Best of all are the drawings: neat, simple, funky, their inevitable influence on your own sketches makes this handsome volume underpriced... now where did I lay my X-acto...—Joe Eddy Brown </cite></p><p><cite> I agree with Joe Eddy Brown that this is an exceptionally fine book. My only reservation is that the presentation subtly tends to keep you traditional, which for many will do just fine anyway. —J.Baldwin<cite></p>");
+
+      break;
+      ///terceiro artigo
+      case "3":
+      $("#titulo").append("The Owner-Built Homestead")
+      document.getElementById("bg").src="images/3.jpg";
+      buyLink ="The-Owner-Built-Homestead-Barbara-Kern/dp/0684149222";
+      $("#primeiro").append("<p>This book is sound advice on tire best low-cost building techniques from around the world — Africa, India, Israel — countries that cannot afford U.S. style waste. Much of it is not in print elsewhere. </p><p>A 1’’ concrete floor with loading stresses of 450 lbs. per sq. ft.; houses built of earth, woven bamboo and bottles, as well as of conventional materials. How to hook up your plumbing in a simple central core. </p>");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>Good dope on concrete-proportions, additives such as sawdust or emulsified asphalt for <em>comfort cushion</em> floor. Details on wood framing, how stud wall houses are overbuilt, the strength of threaded nails. </p> <p>There is much good data on building with rock and earth, how to make a sliding form for rammed earth and a discussion of the strength of rammed earth and soil cement. Why don't you hear anything these days about earth wall buildings? </p>"); 
+
+      });
+      break;
+      case "4":
+      $("#titulo").append("Craft Business Encyclopedia")
+      document.getElementById("bg").src="images/4.jpg";
+      buyLink ="The-Crafts-Business-Encyclopedia-Management/dp/0151227527";
+
+      $("#primeiro").append("<p><cite>It's a big advantage over the other crafts business guides is that entries are organized in convenient dictionary form. It's 3 good general reference guide which will either tell you what you want to know about the crafts business or, if not, where to find out. —Marilyn Green</cite> </p> <p>Two methods of calculating depreciation are most commonly used: </p> Straight Line. The total cost is divided into equal parts over the expected number of years the item will last. If a kiln costs $600 and is expected to last ten years, it will be depreciated by $60 every year. After one year, then, the kiln has a book value of $540, after two years $480, until at last, ten years later, it theoretically has no further value at all.</p>");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>Declining Balance. The value of the item is reduced by a specified percentage each year. If the amount is, for example, 10 percent of the balance each year, then the $600 kiln would be depreciated $60 the first year (to $540), $54 the second year (to $486), $48.60 the third year, and so on.</p><p>When a fixed asset has both a business use and a personal use — a building which houses both your home and your shop, or a car which is used for family as well as business purposes — only that portion of the depreciation which applies to the business purpose can be deducted as a business expense.</p><p>Depreciation not only helps you calculate your cost of doing business more accurately, but also establishes the value of your fixed assets at any given time.</p>"); 
+
+      });
+      break;
+      //quinto artigo
+      case "5":
+      $("#titulo").append("Ladies' Home Journal Art of Homemaking ")
+            document.getElementById("bg").src="images/5.jpg";
+      buyLink ="The-Ladies-Home-Journal-Homemaking/dp/067121487X";
+      $("#primeiro").append("<p><cite>Comprehensive reference for those whose mothers never taught them. It’s focus is on staying organized behind a myriad of household chores; its strongest point that it covers care of current fabrics, furniture, and appliances mother never heard of.  It gives concise hot-to-instructions for every imaginable routine, and then encourages you not to be too compulsive – an attractive paradox.—Diana Barich</cite> </p> <p>Avoid the use of chrome near the seashore, as salty air is apt to corrode it. Stainless steel is a more durable material and will not corrode. To clean it, use a little ammonia and water, a spray glass cleaner, or a special stainless steel cleaner. </p> <p>Tip: Leftover carbonated water or club soda is excellent for cleaning chrome and stainless steel. We learned this trick from a friendly bartender!</p>");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>When to use a Clothesline</p><p>Despite the increased popularity in the use of automatic dryers, many still prefer to use the clothesline, or if they don't prefer it, they are doing it out of necessity. While it is harder to lug the laundry to the clothesline, drying out of doors does give clothe a lovely fresh smell. An indoor line is also necessary for those bad-weather days. If you don't have an area where you can leave the line up at all times consider one of those indoor retractable types. Hang it in a spare room or bathroom. </p><p>To hang sheets, fold them double, hem to hem. Turn about three or four inches over the line and pin, or fold in half if that is easier for you (make sure the pins are snag free and clean). Run your fingers down the selvage edges to make sure they are smooth. If you hang them this way, </p>"); 
+        $("#segundo").click(function(){
+        $("#primeiro").remove();
+        $("#terceiro").append("<p>sheets will dry evenly and will be easier to iron. As a matter of fact, they may well be smooth enough so that ironing is unnecessary if you fold while faintly damp (only enough to feel coolish to the touch). If they are permanent press sheets, then your ironing worries are over!</p><p>To hang men's shirts, first fold double by bringing the two shirt fronts together, then hang by the tail, folding three or four inches over the line. Pin at the ends.</p><p>We like to hang permanent-press shirts on hangers for drying. Secure the hangers to outdoor lines with clothespins.</p> <p>To hang towels, fold either one third or double over the line. Shake them vigorously, to restore softness and fluffiness. Never hang by one corner</p>")
+      })
+
+      });
+      break;
+      //artigo seix
+      case "6":
+      $("#titulo").append("Sylvia Porter's New Money Book")
+      document.getElementById("bg").src="images/6.jpg";
+      buyLink ="Sylvia-Porters-Money-Book-Invest/dp/0385084846";
+
+      $("#primeiro").append("<p><em>Sylvia Porter is not kidding. This is about money, not so much how to make it but how to keep, save, and judiciously spend it. There is advice and information on every purchasing decision, and it is usually good advice. —Paul Hawken </em></p><p>Before you invest a penny in your dream house you must find the right property on which to build. Here's how to go about it: </p> <p>•  Find out from the town clerk’s office the zoning regulations in the neighborhood in which the property you likes is situated.</p> <p>•  Ask for a survey of the lot. Exactly where are the boundaries? (Walk the lines yourself.) </p> ");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>• Find out from local lenders whetes they will make home-building loans in your neighborhood. A good source of information is the Federal Housing Administration’s nearest branch office. The FHA considers the neighborhood as well as the individual house when it insures loans.</p><p>•  Inspect the lot after a heavy rain; if possible, after several days of downpour. That will show how rapidly surface water leaves the site. If a plot is filled, the fill may settle and take the house along with it.</p> <p>•  Be wary of land subdivisions still in the 'blueprint stage.' These always are a gamble.</p>"); 
+        $("#segundo").click(function(){
+        $("#primeiro").remove();
+        $("#terceiro").append("<p>What Fund For You?</p><p>Every investor certainly should investigate funds. Many of you will find the funds are suitable for achieving your investment goals.</p><p>To help you determine the kind of mutual fund that is best suited for you, here are broad guidelines.  </p><p>Specifically, if you are:</p><p>• Single, earning under $15,000, with a savings-oriented (conservative) temperament: you should own an income fund with a dual goal of providing some longer-term capital growth.</p>")
+      })
+      });
+        $("#terceiro").click(function(){
+          $("#segundo").remove();
+          $("#quarto").append("<p>• Single, earning under $15,000, with a chance-taker's (aggressive) temperament: yours should be a 'total return' fund, concentrating on high-growth common stocks or a long-term growth fund.</p><p>•  Married, with two or three dependents, earning $15,000 to $25,000, with a conservative temperament: the best for you would be a blue-chip, common stock fund, for long-term growth of both capital and income.  </p><p>• Married, with two or three dependets, earning $25,000 and up, with a growth-oriented temperament; yours should be either a “income” fund, a “money-market” fund, or a bond fund.</p><p>•  Older person, income coming from Social Security and some savings, with a conservative temperament and a goal of preservation of capital and more current income: </p>");
+        })
+        $("#quarto").click(function(){
+          $("#terceiro").remove();
+          $("#quinto").append("<p>ideally, the medium should be an income fund of the more conservative type which pays dividends and has some appreciation possibilities. Or a money-market fund which will preserve capital and offer a satisfactory –yield.</p> <p>Why Should You Buy Mutual Funds?</p><p>If I were to tell you that the investment advice given to the small investor in the United States is far inferior to that given to the big guy, and that the men and women who give that advice agree the above is true, wouldn't you be deeply disturbed? Okay, I'm telling you that this is the opinion of an overwhelming percentage of the nation's security analysts. According to a recent survey: </p>")
+        })
+        $("#quinto").click(function(){
+          $("#quarto").remove();
+          $("#sexto").append("<p>• A shocking seven out of ten security analysts have ‘reservations about the advice available to the small investor as compared with that given the large one.’</p><p>• Only one in the three believes that “the quality of investment advice now available adequately serves all types of investors.”</p><p>•   Nearly half favor 'some form of blanket registration of security analysts' (in short, greater control).</p>");
+        })
+      break;
+      //setimo artigo
+            case "7":
+      $("#titulo").append("The Incredible Secret Money Machine");
+            document.getElementById("bg").src="images/7.jpg";
+      buyLink ="Incredible-Secret-Money-Machine-Lancaster/dp/0672215624";
+      $("#primeiro").append("<p><cite>For seven years I have actively advised and observed over 400 small businesses. This is the book that would have been helpful to nearly all of them. There is nothing comparable in wisdom, wit and genuine experience that I've seen in writing. On pages 5 & 6, he tells whether the book is for you: it is if you are in business ‘on a total lifestyle basis.’ ‘You want to stay in control’ of your business, you are doing it, ’so . . . (you) can continue doing what you like in the direction you want to go. . .’ and your business is intended to be ‘gentle on yourself, gentle on people and gentle on the environment.’ Out of hundreds of books I've read on small business practices, this is the front runner by a large distance. It's fun to read and exciting.—Michael Phillips</cite></p> <p>Having enough advance financing for your money machine is about the worst possible thing you do and is certain to scuttle the whole machine.</p> ");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>A glib but accurate reason is that if you have the money, you are only going to spend it. And spend it on things that are totally unnecessary and in ways that will commit you down the road to even higher future costs. For your money machine to work, you have to start out scared, lean, and hungry. Such frivolities as food, clothing, and shelter should be totally forgotten in getting your money machine started.</p><p>There are lots of good reasons for studiously avoiding excess money when you start your money machine. It's real difficult for any beginner to increase the amount of money he is handling by more than 20% or so a year without starting to do stupid things with it or worrying too much about it.</p> "); 
+        $("#segundo").click(function(){
+        $("#primeiro").remove();
+        $("#terceiro").append("<p>If a person seeks you out, he has made an ego decision that he will defend. Should he buy from you, he will defend this decision, even if what he bought doesn't meet his needs. No way will he ever admit he got taken. </p> <p>Oppositely, if a person feels he was 'sold' something, he will easily find minor and even unreasonable faults with it to vent his displeasure.</p<p>Find out everything you can about possible antagonists, detractors, or competitors of any form. Anticipate what they are going to do and then completely change the rules of the game to something they simply won't understand. </p> <p>Be hardnosed to freeloaders — if someone is using up more of your time, energy, or money than you'd like, tell them to shove off, walk away, ridicule them, or give them a dose of incompetence.  </p> ")
+      })
+      });
+        $("#terceiro").click(function(){
+          $("#segundo").remove();
+          $("#quarto").append("<p>Screw off a lot — Go for a bicycle ride. Daydream. Go back to bed. Shoot pool. These are the times when things jell, when problems solve themselves, when new ideas happen.  </p><p>The way around the copyright protection dilemma is to make your product so low in cost that no one can afford to duplicate it on their own in small quantities</p> <p>A $4 to $9 technical paperback is unlikely to get widely copied. The same stuff in a $40 hardback book is almost certain to, particularly if it's required for a university course. A $5 cassette software program won't get ripped off because it takes more than $5 worth of hassle to duplicate a single copy.  </p>");
+        })
+        
+      break;
+      case "8":
+      //artigo oito
+      $("#titulo").append("The Craft of Power")
+      document.getElementById("bg").src="images/8.jpg";
+      buyLink ="Craft-Power-R-G-Siu/dp/0471046280/ref=la_B001H6UB32_1_2?s=books&ie=UTF8&qid=1416236731&sr=1-2";
+
+      $("#primeiro").append("<p>An astounding treatise on the naked wielding of naked power – how to get it, hold it, user it. Appearing more brutal than it is (Siu’s bottom lines reflect on compassion and nobility), the argument proceeds from a torrent of Machiavellian aphorisms to instruction and anecdotes. If you have a talent for power, this book may set it resonating. If you have no taste for power, you’ll find that out more quickly here than in the polite corridors of the real thing.</p> <p>Siu is the author of the Tao of Science (p. 29), a translation of the I Ching, and other works. He has been head of numerous research departments for the U.S. military. This book is the first of a trilogy on leadership.</p> <p>The seasoned bureaucrat is adept at servo-bureaucrat viscosity: to every challenge the is an equal and frustrating viscosity.  </p>");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>He dwells in the nirvana of historical momentum; reversing a bureaucrat is tantamount to reversing history. </p> <p>Accommodate to the bureaucrat; he will then ease your life and extend your power. But do you otherwise; he will then drive you out of office and out of mind. </p> <p>People are to be used like fuel in the furnace of power, or cleared away like worn-out gears for more efficient replacements.  So that they burn with the requisite intensity, cleanse them of incombustible allegiances.</p><p>Let the cadre prove its selfless commitment and offer up their persons as signed undated blank checks in your strongbox.</p>"); 
+        $("#segundo").click(function(){
+        $("#primeiro").remove();
+        $("#terceiro").append("<p>Do not place undue weight on that course of action promising maximum gain, if successful. Limit the choices to those preventing a fatal blow to yourself, no matter what the opposition may feasibly do.</p> <p>Credibility is the greatest obstacle to many an overture to power.  Repeat your thesis often, for people tend to shun the unfamiliar and embrace the familiar. User phrases mellifluous to the reak, for people like to identify with the pleasant. Make it sound vital, for people incline to align with the important. Announce your itentions to accomplish something, which is actually well on the way. Promise something that seems difficult but is within ready reach of your unseen reserves.</p>")
+      })
+      });
+        $("#terceiro").click(function(){
+          $("#segundo").remove();
+          $("#quarto").append("<p>Then let the people conclude for themselves that you are truly a man of your world.</p> <p>Propitiousness There is nothing more important in imparting elegance and style than the art of being propitious. The essence of propitiousness is good timing. More failures in the exercise of power have been due to poor timing than any other single factor.</p> <p>When Catherine the Great ascended the throne she tried to introduce the liberal ideas of Charles de Montesquieu. But the Russian state of mind was not receptive. Her ministers balked, and the peasant uprising of Emilien Pugachev of 1773 forced her to drop the idea. It took another 120 years before the time was ripe for even a semblance of parliament.</p> ");
+        })
+        $("#quarto").click(function(){
+          $("#terceiro").remove();
+          $("#quinto").append("<p>In our own day, there are relatively few executives who possess a really keen sense of timing. Most of them do not know how to use the instrument of time. They are unable to allow precisely for lead time, lag time, incubation time, time to build up a head of steam, time to gorget, time to get bores, time to stop talking, and so on. They do not have the feeling for matching the duration of different acts to come into fruition against their respective times of need. They fail to lay the basis for the resolution of conflicts before their actual onset. As a result, they only struggle with the fortitude of facing crisis after crisis. They never glide the art to de existing them.</p>")
+          })
+      break;
+      case "9":
+      //artigo nove
+            document.getElementById("bg").src="images/9.jpg";
+      buyLink ="Survival-Greenbank-Hardcover-Everymans-emergencies/dp/B001DUMESM";
+
+      $("#titulo").append("The Book of Survival by Anthony Greenbank")
+      $("#primeiro").append("<p>The advice is mostly practical, sometimes grotesque, and always fascinating. The style is brilliant – brutal, over-simplified statements and images that you will remember under duress. Are you ready for burning building, freaked humans, speeding cars, dogs, floods, electricity jolting your body, poison, burglars, muggers, poverty, terrorism, con men . . . life, sometimes city life. The wilderness is safer, and more boring.  </p>");
+      break;
+      case "10":
+      //artigo dez
+      document.getElementById("bg").src="images/10.jpg";
+      buyLink ="How-Build-Your-Own-Furniture/dp/B000O6EHZ4";
+      $("#titulo").append("How to Build Your Own Furniture")
+      $("#primeiro").append("<p>Unlike most books on do-it-yourself furniture, How to Build Your Own Furniture by R. J. DeCristoforo contains no plans on how to build your own furniture. What it does contain is information on what should go into the design of a given piece of furniture to make it function properly. If you have ever built a table that wobbled or a drawer that wouldn't open, you will appreciate this book.</p> <p>The book gives a wealth of information and illustrations on techniques and methods of quality furniture craftsmanship. There are chapters on materials and general design and construction with separate chapters on each of the different categories of furniture (such as tables, chairs, desks, chests, etc.). The book is very concise and the instructions and illustrations are easily understandable. </p> <p>This is definitely a standard work for the designer-craftsman.</p>");
+
+      break;
+      case "11":
+      //artigo onze
+      document.getElementById("bg").src="images/11.jpg";
+      buyLink ="Classic-Guitar-Construction-Irving-Sloane/dp/052508200X";
+      $("#titulo").append("Classic Guitar Construction ")
+      $("#primeiro").append("<p>To build a decent classic guitar, you must make several. The first one should take at least six months in a well-equipped shop with controlled humidity. Special jigs and clamps are required, which you make yourself. The order of craftsmanship and musical sensitivity involved will keep the dilettante out of the picture.</p> <p>If you've gotten through those gates, then this is really how to do it, no jive. The text and illustrations (including patterns) are elegant, even inspiring. Shane takes you through all the steps, no gaps, towards a superior instrument. Talk about sacred lines - that's what a classic guitar is made of. It's all conscious decision, a continuous dialogue with the universe.</p> <p>The book won't talk you into or out of making a guitar. If you're the person, it's your book. Follow Shane's recipe and the world will beat a path to your door.</p>");
+        
+      break;
+
+      case "12":
+      //artigo doze
+      document.getElementById("bg").src="images/12.jpg";
+      buyLink ="Champagne-Living-Beer-Budget-Best/dp/B00AN0PIBS";
+      $("#titulo").append("Champagne Living on a Beer Budget")
+      $("#primeiro").append("<p>If your vision of an alternate life style includes a dome in the mountains, raising your own food and making your own clothes from homespun wool, you probably ought to pass this book up and wait til somebody writes Beer Living On A Bay-Rum Budget.</p> <p>But if you are pioneering in or near a city, and if money passes through your hands with some regularity; if, that is, you consider yourself what I have come to think of as a 'suburban guerrilla,' then Champagne Living On A Beer Budget would be a handy tool to have around your camp.  </p> <p>Someday, after I’ve lived in the suburbs longer, I’d like to write an essay about my vision of the suburban guerrilla. He’s a definite phenomenon. There’s a sizeable population of them here in the San Franscisco Bay area, </p> ");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<p>men and women out to enjoy the advantages of town life without paying the customary penalties. Every suburban guerrilla probably has his own definition of himself, but my own sense of him is this: he has a job, but not a career. He likes the comforts, but doesn’t want to go into debt for them. He makes distictions between things that are good and things that are merely expensive. He may go in for elegance, or he may dig the funky scene. Hippies, after all, are urban guerrillas. But hippies are kids mainly grooving on each other in special enclaves, and that isn’t quite what I’m talking about. I’m talking about people who see the possibility of a rich and abundant adult life within the context of those same suburban communities generally condemned as such hopeless wastelands that ‘real’ life cannot be supported there. This suburban guerrilla I have in mind is of the suburbs, as well as in them.</p>"); 
+          })
+      $("#segundo").click(function(){
+
+        $("#primeiro").remove();
+        $("#terceiro").append("<p>He challenges the assumption that the suburban context is hard, absolute, and impenetrable, like plastic. To him, more like a piece of cheesecloth, full of holes to breathe through, and to wind in and out of, like a morning glory, or a pole bean. He borrows much of his point of view from the Orientals. He realizes that life goes on in the suburbs just like every other place, even if most of the people there are too blind and deaf to see and hear it. The guerrilla lives by his wits, one day at a time. This makes him alert and alive. He has a talent for cultivating the holes in his cheesecloth. One hole might simply be that my the world is at six a.m. Another might be first-hand knowledge of all the footpaths in the neighborhood. He creates his freedom here and there and now and then, and by diligence winds up with as much as any conscious man anywhere. </p>"); 
+          })
+      $("#terceiro").click(function(){
+
+        $("#segundo").remove();
+        $("#quarto").append("<p>His landscape is small and patterned, but there are discoveries to be made on it, discoveries that can feed his own life at the same time they are important to the culture. I know of one elderly couple that subsists almost entirely on the food they raise in their organic garden in the backyard of their home in suburban Menlo Park. As far as I’m concerned, the trip those two people are on, the life they are proving possible, is the most inspiring radical activity in all of San Franscisco’s radical environs).</p> <p>One needn’t romanticize his life as much as all that, however, to find the book we’re talking about a worth while manual.  </p>"); 
+          })
+      $("#quarto").click(function(){
+
+        $("#terceiro").remove();
+        $("#quinto").append("<p>Anybody interested in bargains ought to have it. It’s loaded with facts, tips and information on good deals in all the important caregories. Food, clothing, shelter, real estate, automobiles, housegold appliances, medical things, taxation, funerals, recreation, retirement, consumer co-ops, travel, babies, insurance, charities and more. It’s entertainingly written; yet the rhetoric never gets in the way of the information. The people who wrote it obviously want to beat the money rap as much as any of us. They also want to live well. Their book will be considerable to other people trying to do both, simultaneously.</p>"); 
+          })
+
+      break;
+      case "13":
+      //artigo treze
+      document.getElementById("bg").src="images/13.jpg";
+      buyLink ="Built-Our-Own-Computers-S-M-P-Handbooks/dp/0521093783";
+      $("#titulo").append("We Built Our Own Computers")
+      $("#primeiro").append("<p>Time was, kids built their own radios. Now it's rockets and computers, and so much the better. Once you've built one computer you have a far more sophisticated relationship with all computers. This British text, prepared by five school boys who indeed built their own computers, is an excellent introduction to hands-in technique.</p> ");
+        break;
+
+        case "14":
+        //artigo quartoze
+      document.getElementById("bg").src="images/14.jpg";
+      buyLink ="700-Science-Experiments-Everyone-Compiled/dp/B004BIWSG6";
+      $("#titulo").append("Science Experiments for Everyone")
+      $("#primeiro").append("<cite><p>This book grew out of a smaller volume called suggetions for Science Teachers in Devested Areas whos production was sponsored by UNESCO right after World War II. It was meant for use in schools whose building and labs had been destroyed and soon found its way into the hands of people who has never had these things to begin with. Thus it solves the problem of schools, communities – people – who want to ‘live’ science withouth money or equipment. There isn’t any experiment in it wich would be too costly for any of us to do. The book tells you how to put together the equipment you need do to the experiments is just stuff you’d have around the house. </p><p>The rest can be gotten [very low cost stuff], at the drugstore, hardware, junk yard, etc.</p><p>Also the book is unusually well written. There’s no bullshit in</p></cite> ");
+      $("#primeiro").click(function(){
+
+        $(".cont").animate({marginLeft:"5px"});
+        $("#segundo").append("<cite><p>  it and it doesn’t talk down to the reader. Just very straightforward instructions with illustrations that are highly readable. In most cases you aren’t told the outcome of the experiment, an aspect which makes you much more interested in doing it.—Jane Burton</p></cite><p>A model illustrating how an eclipse appears</p> <p>The sun is represented by an opal electric bulb shining through a circular hole 5 cm in diameter in a piece of blackened cardboard. The corona is drawn in the red crayon around this hole. The moon is a wooden ball 2.5 cm diameter mounted on a knitting needle. The observer views the ellipse though any of several large pine holes in a screen on the front of the apparatus. The corona only becomes visible at the position of total eclipse. The moon’s position is adjusted by a stout wire bicycle spoke attached to the front of the apparatus.</p>"); 
+          })
+      $("#segundo").click(function(){
+
+        $("#primeiro").remove();
+        $("#terceiro").append(" <p> Another way to show that water pressure increases with depth</p> <p>Find a tall tin can. Punch holes up the side of the can about 3 cm apart. Put a strip of adhesive or plastic tape over the row of holes and fill the can with water above the top hole. Hold the can over a sink and strip the tape from the holes beginning at the bottom. Observe the streams and note the distances travelled outwards from the can.</p> <p>Water pressure is the same in all directions</p><p>Punch holes around the base of a tall tin can with a nail. Cover the holes as above with a strip of tape. Fill the can with water and strip off the tape while holding it over a sink. Observe and compare the distance the streams shoot out from the holes all around the can.</p>"); 
+          })
+      $("#terceiro").click(function(){
+
+        $("#segundo").remove();
+        $("#quarto").append("<p>A simple rotation machine</p><p>Secure a breast-drill or hand-drill such as the one shown in the diagram. Clamp a small screw eye or cup hook in the chuck of the drill. Attach a 30 cm length of light string near the point end of a spike. Make a loop in the other end of the string and attach it to the screw eye in the chuck of the drill.</p><p>Now rotate the drill steadily by crank. Observe how the centrifugal force affects the suspended spike.</p><p>An egg osmometer</p><p>Place some dilute hydrochloric scid or strong vinegar in a shallow dish, such as saucer, </p>"); 
+          })
+      $("#quarto").click(function(){
+
+        $("#terceiro").remove();
+        $("#quinto").append(" <p>to a depth od about one centimeter. Hold the large end of an egg in the acid until the shell has been eaten away or, the end leaving the thin membrane exposed. Rinse the acid from the eff. With a sharp instrument work a small hole through the shell at the other end. Insert a soda straw or a length of glass tubing through the hole into the interior of the egg. Seal the opening around the tube with household cement or sealing wax. This must be absolutely tight. Place the osmometer in a glass of water and let it stand for a few hours.</p><p>Making smoke pints of leaves</p> <p>Cover the side of a smooth, round bottle with a thin layer of grease or Vaseline. Fill the bottle with cold water and cork it tightly. </p>"); 
+          })
+      $("#quinto").click(function(){
+
+        $("#quarto").remove();
+        $("#sexto").append("Hold the bottle over a candle flame until it is covered evenly with soot. Place a leaf, vein side up, on a layer of newspaper and roll the sooty bottle over the leaf. Remove the leaf and lay it vein side up on clean newspaper. Cover the leaf with a sheet of white paper and leaf with a clean round bottle or other roller.");
+        })
+      break;
+
+      case "15":
+//artigo quinze 
+      document.getElementById("bg").src="images/15.jpg";
+
+      $("#titulo").append("Human Engineering Guide")
+      $("#primeiro").append("<p>Buy this book and keep it at hand at all times if you design or build anything that will by used by for, or come in contact with people. Concise statement of ideas both through the informative writing and clear illustrations. The authors have followed their own guidelines and produced a device (this book) which will do well what it was designed to do, transfer a large amount of information between people. If you want information on human engineering, design of equipment arid work space, vision, audition and body measurement, it's all in this book chapter by chapter. The above categories area partial list of actual chapter headings. This book should be used by ail design engineers, but it is not necessary to be a design engineer or even an engineer to ' use it. Really fundamental ideas clearly stated can be understood by anyone.</p> ");
+        break;
+    }                                    
+});
+
+function getLink() {
+
+  window.location = "http://www.amazon.com/" + buyLink;
+}
+
+
+</script>
+</script>
+
+
+
+    <style type="text/css">
+     body {
+      position: fixed;
+     }
+
+     div {
+      display: inline-block;
+      padding: 10px;
+      vertical-align: top;
+            font-family: Garamond;
+      font-size: 24px;
+      line-height: 33px;
+      
+     }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:#d3d3d3;
+}
+     #bg {
+      position: fixed;
+      z-index: -2;
+      margin-top: -10px;
+      margin-left:-10px;
+     }
+          #bg:hover {
+      position: fixed;
+      z-index: 0;
+      margin-top: -10px;
+      margin-left:-10px;
+          -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fadeInFromNone;
+
+}
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display:none; 
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+     
+      .cont {
+      width: 610px;
+      margin-left: 350px;
+      margin-top: 20px;
+      
+     
+     }
+      #titulo {
+      width: 620px;  
+      position: fixed;
+      margin-left: 60px;
+      margin-top: -7px;
+
+     }
+
+     #main {
+      margin-top: 70px;
+      margin-left: -11px;
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
+      width: 105%;
+      height: 580px;
+     }
+
+     #logo {
+      width: 100px;
+      height: 100px;
+      background-image: url(logo.png);
+      position: fixed;
+      background-repeat: no-repeat;
+     }
+
+
+
+     #botao {
+      width: 40px;
+      float: right;
+      z-index: 3;
+       margin-right: 20px;
+     }
+     #loja {
+      width: 100%;
+
+     }
+    </style>
+    <!-- Google Fonts -->
+      <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat:400,100|Source+Sans+Pro:400|Volkhov:400,400italic'>
+
+      <!-- FontAwesome -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  </head>
+
+  <body>
+<img id="bg"  >
+    <a href="index.html"><div id="logo"></div>
+    <h1 id="titulo"align="center"> </h1></a>
+
+    <div id="main">
+      <div class="cont" id="primeiro"></div>
+      <div class="cont" id="segundo"></div>
+      <div class="cont" id="terceiro"></div>
+      <div class="cont" id="quarto"></div>
+      <div class="cont" id="quinto"></div>
+      <div class="cont" id="sexto"></div> 
+    </div>
+
+<h5 onclick="getLink()" style="width:100%;
+ 
+  position:absolute;
+  bottom:0;
+  width:50px;
+  color:#d3d3d3;
+  text-align:right">Amazon </h5>
+
+  </body>
+
+</html>
